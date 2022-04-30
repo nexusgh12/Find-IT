@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/Righteous-Regular.ttf");
+    font-family: "Righteous";
+}
+
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/BMJUA_ttf.ttf");
+    font-family: "jua";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/BMHANNAAir_ttf.ttf");
+    font-family: "hanna";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/BMHANNAPro.ttf");
+    font-family: "hanna_pro";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/NanumGothic.ttf");
+    font-family: "nanum_gothic";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/NanumGothicBold.ttf");
+    font-family: "nanum_gothic_bold";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/NanumGothicExtraBold.ttf");
+    font-family: "nanum_gothic_extrabold";
+}
+@font-face {
+    src:url("<%=request.getContextPath() %>/fonts/NanumGothicLight.ttf");
+    font-family: "nanum_gothic_light";
+}

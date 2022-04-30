@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.findit-box-bottom .wrap .container {
+	width: 80%;
+	padding: 50px;
+	height: 1100px;
+	display: block;
+}
+
+.content-box .header:nth-child(1) {
+	text-align: left;
+	color: #7EA1C9;
+}
+
+.board-body {
+	font-family: san-serif;
+}
+
+.card {
+	max-width: 250px;
+	height: 350px;
+	font-family: "hanna";
+	color: #4b4b4b;
+	text-align: center;
+}
+
+.card-header {
+	max-width: 250px;
+	background-color: #F8F8F8;
+	min-height: 200px;
+}
+
+.card-img-top {
+	width: 130px;
+	max-height: 200px;
+	margin: 0 auto;
+}
+
+.card-body {
+	font-size: 1em;
+	font-weight: bold;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.card-body h6 {
+	font-weight: bold;
+}
+
+#btn-datawrite {
+	background-color: #F8CF95;
+	border-color: #F8CF95;
+	color: #ffffff;
+	height: 30px;
+	line-height: 0px;
+}
+
+#div-datawrite {
+	float: right;
+	position: relative;
+	bottom: -140px;
+}

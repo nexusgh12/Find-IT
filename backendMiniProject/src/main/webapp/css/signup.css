@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.content-header {
+	text-align: center;
+}
+
+.container{
+	overflow:hidden;
+	height:auto;
+}
+
+.findit-box-bottom .wrap .container {
+	width: 40%;
+	padding : 100px;
+}
+
+#mFrm li{
+	float: left; height:40px; line-height:40px; width:25%;
+	text-align:left;
+	margin-top: 15px;
+}
+
+#mFrm li:nth-child(2n+1){
+	width: 75%;
+}
+#mFrm li:nth-child(1){
+	width: 25%;
+}
+#mFrm li:nth-child(2){
+	width: 75%;
+}
+#mFrm li:nth-child(3){
+	width: 100%;
+	text-align:center;
+	height:10px;
+	line-height:10px;
+	margin-top: 5px;
+}
+#mFrm li:last-child {
+	width: 100%;
+	text-align:center;
+}
+
+#tel1, #tel2, #tel3, #s{
+	margin-left:3px;
+	float:left;
+}
+#tel1, #tel2, #tel3{
+	width:30%;
+	height:40px; 
+	line-height:40px;
+}
+
+.btn-social-login.btn-social-f {
+	background-color: #F8CF95;
+	border-color: #F8CF95;
+	color: #ffffff;
+	
+}
+
+#signup-logo{
+	position:relative;
+	left:-50px;
+	top:-40px;
+}
+input[type="password" i], input[type="text" i], input[type="email" i]{
+	font-family:san-serif;
+}

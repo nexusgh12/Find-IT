@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+.findit-box-bottom .wrap .container {
+	width: 80%;
+	padding : 50px;
+	min-height: 700px;
+	display:block;
+}
+
+.content-box .header:nth-child(1){
+	text-align: left;
+	color: #7EA1C9;
+}
+
+.board-body{
+	font-family:san-serif;
+}
+
+.div-content{
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+}
+.div-left{
+	flex-basis: 30%;
+}
+.div-right{
+	flex-basis: 70%;
+	
+}
+
+
+.div-right li{
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: left;
+	padding-left:60px;
+	
+}
+
+.div-right li:nth-child(2n+1){
+	position:relative;
+	width:30%;
+}
+.div-right li:nth-child(2n){
+	position:relative;
+	width:70%;
+	font-family: "nanum-gothic";
+	font-weight:bold;
+	color:#4b4b4b;
+}
+
+.div-right #div-edit{
+	text-align:right;
+}
+
+
+
+
+.card{
+	max-width:250px;
+	height:350px;
+	font-family: "hanna";
+	color:#4b4b4b;
+	text-align: center;
+	margin:0 auto;
+}
+.card-header{
+	max-width:250px;
+	background-color: #F8F8F8;
+	min-height:200px;
+}
+.card-img-top{
+	width:130px;
+	max-height:200px;
+	margin:0 auto;
+}
+
+.card-body{
+	font-size:1em;
+	font-weight: bold;
+	width:200px;
+	margin:0 auto;
+}
+.card-body h6{
+	font-weight: bold;
+}
+
+
+
+
+
+/* 리뷰 */
+#reviewHeader{
+	text-align: left;
+	margin-top:30px;
+}
+
+.product-review {
+	display:flex;
+	color: #686868;
+	font-family: hanna, san-serif;
+	flex-direction: column;
+}
+
+.review-profile{
+	display:flex;
+	width:200px;
+}
+
+.profile-img{
+	flex:4;
+}
+.profile-name{
+	flex:8;
+	text-align:left;
+}
+
+
+.review-date{
+	flex:7;
+	text-align: right;
+}
+
+.review-description{
+	display:flex;
+	flex-direction:row;
+}
+
+.review-title{
+	flex:3
+}
+
+.review-title p{
+	font-weight: bold;
+}
+
+
+.review-content{
+	flex:7;
+}
+
+
+

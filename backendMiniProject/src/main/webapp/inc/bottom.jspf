@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<div class="btnCircle">
+	<!-- <i class="fa-solid fa-arrow-up-to-line" ></i> -->
+
+	<span class="fa-stack fa-lg " id="topBtn"> <i
+		class="fa-solid fa-arrow-up"></i>
+	</span>
+
+	<!-- <a id="topBtn" href="#"></a> -->
+</div>
+</div>
+<div class="bottom">Copyrightⓒ 2022 All rights reserved by Find'it</div>
+<script type="text/javascript">
+	/* 메뉴 토글버튼 */
+	const toggleBtn = document.querySelector('.nav_toggleBtn');
+	const menu = document.querySelector('.nav');
+	const profile = document.querySelector('.profile');
+	
+	toggleBtn.addEventListener('click', () => {
+	  menu.classList.toggle('active')
+		  profile.classList.toggle('active')
+	});
+	/* 맨위로 올라가기 */
+	$(function() { 
+	// 보이기 | 숨기기 
+		$(window).scroll(function() {
+		 if ($(this).scrollTop() > 100) { //40 넘으면 버튼이 보여짐니다. 
+		 	$('#topBtn').fadeIn(); 
+	 	} else {
+	 	 	$('#topBtn').fadeOut(); 
+	 	 } }); // 버튼 클릭시 
+	 	 $("#topBtn").click(function() { 
+	 	 	$('html, body').animate({ 
+	 	 	scrollTop : 0 // 0 까지 animation 이동합니다. 
+	 	 	}, 400); // 속도 400 
+	 	 	return false; 
+ 		}); 
+ 	});	
+</script>
+</body>
+</html>

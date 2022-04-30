@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.findit-box-bottom .wrap .container {
+	width: 80%;
+	padding: 50px;
+	min-height: 700px;
+	display: block;
+	color: #4b4b4b;
+}
+
+.content-box {
+	overflow: auto;
+}
+
+.content-box>h1 {
+	text-align: left;
+	margin-bottom:30px;
+	color: #7EA1C9;
+}
+
+#subject{
+	width:100%;
+}
+
+#boardFrm{
+	font-family: "nanum_gothic";
+}
+
+#boardwrite-submit{
+	float:right;
+	background-color: #7EA1C9;
+	border-color: #7EA1C9;
+	color: #ffffff;
+}

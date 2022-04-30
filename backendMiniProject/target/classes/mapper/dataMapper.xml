@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.campus.myapp.dao.DataDAO">
+
+	<insert id="dataInsert">
+		insert into databoard(product, price, userid, category, option1, option2,
+		filename1, filename2)
+		values(#{product}, #{price}, #{userid}, #{category}, #{option1}, #{option2},
+		#{filename1}, #{filename2})
+	</insert>
+
+	<select id="dataSelectAll"
+		resultType="com.campus.myapp.vo.DataVO">
+		select no, product, userid, date_format(writedate, '%m-%d %H:%i') writedate,
+		filename1, filename2, price, category, option1, option2
+		from databoard order by no desc
+	</select>
+	
+	<select id="dataView" resultType="com.campus.myapp.vo.DataVO">
+		select no, product, userid, price, writedate, filename1, filename2
+		, category, option1, option2
+		from databoard where no=${param1}
+	</select>
+	<select id="getFileName" resultType="com.campus.myapp.vo.DataVO">
+		select filename1, filename2 from databoard where no=${param1}
+	</select>
+	
+	<update id="dataUpdate">
+		update databoard set product=#{product}, price=#{price}, 
+		filename1=#{filename1}, filename2=#{filename2}, category=#{category},
+		option1=#{option1}, option2=#{option2}
+		where no=${no} and userid=#{userid}
+	</update>
+	<delete id="dataDelete">
+		delete from databoard where no=#{param1} and userid=#{param2}
+	</delete>
+</mapper>
